@@ -1,1 +1,5 @@
-# maratona-java
+# Java Marathon
+
+
+## 🛠 Skills
+Fundamentals, OOP ...

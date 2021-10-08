@@ -19,9 +19,11 @@ public class Operators {
         System.out.println(tenIsLessThanTwenty);
 
         boolean tenIsEqualToTwenty = 10 == 20;
+
         System.out.println(tenIsLessThanTwenty);
 
         boolean tenIsDifferentThanTwenty = 10 != 20;
+
         System.out.println(tenIsDifferentThanTwenty);
 
         int age = 19;
@@ -31,6 +33,13 @@ public class Operators {
 
         System.out.println(withinTheLawGreaterThanThirty);
         System.out.println(withinTheLawLessThanThirty);
+
+        double totalValueOfCheckingAccount = 200;
+        double totalValueOfSavingsAccount = 10000;
+        float valueOfPlaystation = 5000;
+        boolean playstationFiveBuyable = totalValueOfCheckingAccount > valueOfPlaystation || totalValueOfSavingsAccount > valueOfPlaystation;
+
+        System.out.println(playstationFiveBuyable);
     }
 
     public static String calculator(String operation, int n1, int n2) {

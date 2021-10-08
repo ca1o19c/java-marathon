@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class PrimitivesType {
     public static void main(String[] args) {
         String name = "Caio";
-        String address = "Rua";
+        String address = "Rua Serra Dourada";
         float salary = 2000F;
 
         System.out.println("Eu " + name + ", morando no endereço " + address +

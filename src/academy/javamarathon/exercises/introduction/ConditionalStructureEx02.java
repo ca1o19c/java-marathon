@@ -1,6 +1,6 @@
 package academy.javamarathon.exercises.introduction;
 
-public class StructureConditionalEx02 {
+public class ConditionalStructureEx02 {
     public static void main(String[] args) {
         byte day = 1;
 

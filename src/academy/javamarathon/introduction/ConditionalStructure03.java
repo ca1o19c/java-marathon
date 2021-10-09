@@ -1,6 +1,6 @@
 package academy.javamarathon.introduction;
 
-public class StructureConditional03 {
+public class ConditionalStructure03 {
     public static void main(String[] args) {
         double salary = 6000;
         String donateMessage = "I will donate 600 to DevDojo";

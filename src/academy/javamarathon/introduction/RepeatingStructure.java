@@ -19,5 +19,15 @@ public class RepeatingStructure {
         for (int i = 0; i < 10; i++) {
             System.out.println("inside for -> " + i);
         }
+
+        int maxValue = 50;
+
+        for (int i = 0; i <= maxValue; i++) {
+            if (i > 25) {
+                break;
+            }
+
+            System.out.println(i);
+        }
     }
 }

@@ -1,6 +1,6 @@
 package academy.javamarathon.exercises.introduction;
 
-public class RepeatingStructureEx {
+public class RepeatingStructureEx01 {
     public static void main(String[] args) {
         for (int i = 1; i <= 1000000; i++) {
             if (i % 2 == 0) {

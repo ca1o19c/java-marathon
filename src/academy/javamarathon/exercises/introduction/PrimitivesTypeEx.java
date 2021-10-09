@@ -10,9 +10,8 @@ package academy.javamarathon.exercises.introduction;
  */
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-public class PrimitivesType {
+public class PrimitivesTypeEx {
     public static void main(String[] args) {
         String name = "Caio";
         String address = "Rua Serra Dourada";

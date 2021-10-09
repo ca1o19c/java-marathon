@@ -1,6 +1,6 @@
 package academy.javamarathon.introduction;
 
-public class StructureConditional02 {
+public class ConditionalStructure02 {
     public static void main(String[] args) {
         int age = 19;
         String category;

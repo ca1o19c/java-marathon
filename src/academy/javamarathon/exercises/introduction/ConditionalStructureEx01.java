@@ -1,6 +1,6 @@
 package academy.javamarathon.exercises.introduction;
 
-public class StructureConditionalEx {
+public class ConditionalStructureEx01 {
     public static void main(String[] args) {
         double annualSalary = 70000;
         double firstTrack = 9.70 / 100;

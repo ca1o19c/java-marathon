@@ -1,6 +1,6 @@
 package academy.javamarathon.introduction;
 
-public class StructureConditional01 {
+public class ConditionalStructure01 {
     public static void main(String[] args) {
         int age = 19;
         boolean authorizedToBuyAlcoholicBeverage =  age >= 18;

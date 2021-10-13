@@ -9,8 +9,12 @@ public class Arrays02 {
 
         String[] names = new String[3];
 
-        System.out.println(names[0]);
-        System.out.println(names[1]);
-        System.out.println(names[2]);
+        names[0] = "Maria";
+        names[1] = "Caio";
+        names[2] = "Marcio";
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
     }
 }

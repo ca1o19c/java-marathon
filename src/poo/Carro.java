@@ -66,6 +66,16 @@ public class Carro {
         System.out.println("A autonomia do carro é: " + this.capCombustivel * this.consumoCombustivel + "Km");
     }
 
+    double obterAutonomia() {
+        return this.capCombustivel * this.consumoCombustivel;
+    }
+
+    double calcularCombustivel(double km) {
+        double qtdCombustivel = km / this.consumoCombustivel;
+
+        return  qtdCombustivel;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(marca, modelo, numPassageiros, capCombustivel, consumoCombustivel);

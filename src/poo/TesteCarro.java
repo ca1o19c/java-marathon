@@ -13,6 +13,9 @@ public class TesteCarro {
         System.out.println(van.marca);
         System.out.println(van.modelo);
         van.exibirAutonomia();
+        System.out.println(van.obterAutonomia());
+        System.out.println(van.calcularCombustivel(20));
+        System.out.println(van.calcularCombustivel(10));
 
         var fusca = new Carro();
 
@@ -25,5 +28,8 @@ public class TesteCarro {
         System.out.println(fusca.marca);
         System.out.println(fusca.modelo);
         fusca.exibirAutonomia();
+        System.out.println(fusca.obterAutonomia());
+        System.out.println(fusca.calcularCombustivel(20));
+        System.out.println(van.calcularCombustivel(10));
     }
 }

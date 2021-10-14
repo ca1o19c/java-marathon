@@ -1,4 +1,4 @@
-# Aprendendo :coffee:Java
+# Maratona :coffee:Java
 
 > Repositório de Estudo
 

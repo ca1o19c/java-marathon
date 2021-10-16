@@ -1,7 +1,7 @@
 package javacore.introducaoclasses.dominio;
 
-public class Estudante {
-    public String nome = "Default";
+public class Professor {
+    public String nome;
     public int idade;
     public char sexo;
 }

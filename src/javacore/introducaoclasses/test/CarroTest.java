@@ -19,5 +19,9 @@ public class CarroTest {
         mobi.ano = 2022;
 
         System.out.println("nome: " + mobi.nome + " modelo: " + mobi.modelo + " ano: " + mobi.ano);
+
+        mobi = fusca;
+
+        System.out.println("nome: " + mobi.nome + " modelo: " + mobi.modelo + " ano: " + mobi.ano);
     }
 }

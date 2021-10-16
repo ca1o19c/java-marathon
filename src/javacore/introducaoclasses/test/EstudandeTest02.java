@@ -2,7 +2,7 @@ package javacore.introducaoclasses.test;
 
 import javacore.introducaoclasses.dominio.Estudante;
 
-public class EstudandeTeste02 {
+public class EstudandeTest02 {
     public static void main(String[] args) {
         Estudante estudante = new Estudante();
         Estudante estudante1 = new Estudante();

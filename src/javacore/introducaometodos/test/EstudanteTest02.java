@@ -3,9 +3,8 @@ package javacore.introducaometodos.test;
 import javacore.introducaometodos.dominio.Estudante;
 import javacore.introducaometodos.dominio.ImpressoraEstudante;
 
-public class EstudanteTest01 {
+public class EstudanteTest02 {
     public static void main(String[] args) {
-        ImpressoraEstudante impressora = new ImpressoraEstudante();
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
 
@@ -17,9 +16,7 @@ public class EstudanteTest01 {
         estudante02.idade = 19;
         estudante02.sexo = 'F';
 
-        impressora.imprime(estudante01);
-        impressora.imprime(estudante02);
-        impressora.imprime(estudante01);
-        impressora.imprime(estudante02);
+        estudante01.imprime();
+        estudante02.imprime();
     }
 }

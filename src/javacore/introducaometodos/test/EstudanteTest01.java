@@ -18,6 +18,9 @@ public class EstudanteTest01 {
         estudante02.sexo = 'F';
 
         impressora.imprime(estudante01);
+
+        System.out.println("---------------------");
+
         impressora.imprime(estudante02);
     }
 }

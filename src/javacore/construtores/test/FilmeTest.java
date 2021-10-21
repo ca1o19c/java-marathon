@@ -10,12 +10,9 @@ public class FilmeTest {
         double imdb = 7.89;
         int ano = 2002;
         List<String> escritores = List.of("Stan Lee", "Steve Ditko", "David Koepp");
+        String estudio = "Marvel";
 
-        Filme filme = new Filme(titulo, imdb, ano, escritores);
-
-        Filme filme2 = new Filme();
-
+        Filme filme = new Filme(titulo, imdb, ano, escritores, estudio);
         filme.imprime();
-        filme2.imprime();
     }
 }

@@ -9,16 +9,27 @@ public class Filme {
     private Double imdb;
     private Integer ano;
     private List<String> escritores;
+    private String estudio;
 
     public Filme(String titulo, Double imdb, Integer ano, List<String> escritores) {
+        this();
         this.titulo = titulo;
         this.imdb = imdb;
         this.ano = ano;
         this.escritores = escritores;
     }
 
-    public Filme() {
+    public Filme(String titulo, Double imdb, Integer ano, List<String> escritores, String estudio) {
+        this(titulo, imdb, ano, escritores);
+        this.titulo = titulo;
+        this.imdb = imdb;
+        this.ano = ano;
+        this.escritores = escritores;
+        this.estudio = estudio;
+    }
 
+    public Filme() {
+        System.out.println("Dentro do construtor sem argumentos");
     }
 
     public void imprime() {
@@ -26,6 +37,7 @@ public class Filme {
         System.out.println(this.imdb);
         System.out.println(this.ano);
         System.out.println(this.escritores);
+        System.out.println(this.estudio);
     }
 
     public String getTitulo() {

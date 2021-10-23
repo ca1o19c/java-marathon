@@ -8,9 +8,9 @@ public class CarroTest {
         Carro c2 = new Carro("BMW", 280);
         Carro c3 = new Carro("Toro", 240);
 
-        System.out.println(Carro.velocidadeLimite);
-        Carro.velocidadeLimite = 180;
-        System.out.println(Carro.velocidadeLimite);
+        System.out.println(Carro.getVelocidadeLimite());
+        Carro.setVelocidadeLimite(180);
+        System.out.println(Carro.getVelocidadeLimite());
 
         c1.imprime();
         c2.imprime();

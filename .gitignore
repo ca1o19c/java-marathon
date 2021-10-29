@@ -26,6 +26,5 @@ target/
 .classpath
 .project
 .vscode/
-*.iml
 /.settings/
 /.factorypath

@@ -1,9 +1,11 @@
 package javacore.heranca.dominio;
 
+import java.util.Objects;
+
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
     public void imprime() {
         System.out.println(this.nome);
@@ -34,5 +36,27 @@ public class Pessoa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return Objects.equals(nome, pessoa.nome) && Objects.equals(cpf, pessoa.cpf) && Objects.equals(endereco, pessoa.endereco);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, cpf, endereco);
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", endereco=" + endereco +
+                '}';
     }
 }

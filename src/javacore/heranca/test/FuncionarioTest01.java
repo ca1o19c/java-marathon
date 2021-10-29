@@ -6,7 +6,7 @@ import javacore.heranca.dominio.Pessoa;
 
 import java.math.BigDecimal;
 
-public class PessoaTest01 {
+public class FuncionarioTest01 {
     public static void main(String[] args) {
         var endereco = new Endereco();
 
@@ -34,5 +34,6 @@ public class PessoaTest01 {
         funcionario.setSalario(salario);
 
         funcionario.imprime();
+        funcionario.relatorioPagamento();
     }
 }

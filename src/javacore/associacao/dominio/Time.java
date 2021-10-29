@@ -7,6 +7,15 @@ public class Time {
     private String nome;
     private Jogador[] jogadores;
 
+    public Time(String nome) {
+        this.nome = nome;
+    }
+
+    public Time(String nome, Jogador[] jogadores) {
+        this.nome = nome;
+        this.jogadores = jogadores;
+    }
+
     public void imprime() {
         System.out.println(this.nome);
 
@@ -15,15 +24,6 @@ public class Time {
         for (Jogador jogador : jogadores) {
             System.out.println(jogador.getNome());
         }
-    }
-
-    public Time(String nome) {
-        this.nome = nome;
-    }
-
-    public Time(String nome, Jogador[] jogadores) {
-        this.nome = nome;
-        this.jogadores = jogadores;
     }
 
     public String getNome() {

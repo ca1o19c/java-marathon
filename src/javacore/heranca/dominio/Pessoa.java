@@ -3,11 +3,26 @@ package javacore.heranca.dominio;
 import java.util.Objects;
 
 public class Pessoa {
+    static {
+        System.out.println("dentro do bloco de inicialização estático de pessoa");
+    }
+
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
 
+    {
+        System.out.println("dentro do bloco  de inicialização não estático de pessoa 1");
+
+    }
+
+    {
+        System.out.println("dentro do bloco  de inicialização não estático de pessoa 2");
+
+    }
+
     public Pessoa(String nome) {
+        System.out.println("Dentro do construtor pessoa");
         this.nome = nome;
     }
 

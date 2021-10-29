@@ -4,10 +4,25 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Funcionario extends Pessoa {
+    static {
+        System.out.println("dentro do bloco de inicialização estático funcionario");
+    }
+
     private BigDecimal salario;
+
+    {
+        System.out.println("dentro do bloco  de inicialização não estático funcionario 1");
+
+    }
+
+    {
+        System.out.println("dentro do bloco  de inicialização não estático funcionario 2");
+
+    }
 
     public Funcionario(String nome) {
         super(nome);
+        System.out.println("Dentro do construtor funcionario");
     }
 
     @Override

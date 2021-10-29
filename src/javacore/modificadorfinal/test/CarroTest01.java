@@ -2,7 +2,7 @@ package javacore.modificadorfinal.test;
 
 import javacore.modificadorfinal.dominio.Carro;
 
-public class CarroTest {
+public class CarroTest01 {
     public static void main(String[] args) {
         var carro = new Carro();
 

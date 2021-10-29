@@ -13,9 +13,8 @@ public class FuncionarioTest01 {
         endereco.setRua("Rua 1");
         endereco.setCep("14100-678");
 
-        var pessoa = new Pessoa();
+        var pessoa = new Pessoa("Victoria");
 
-        pessoa.setNome("Victoria");
         pessoa.setCpf("222.098.777/70");
         pessoa.setEndereco(endereco);
 
@@ -23,9 +22,8 @@ public class FuncionarioTest01 {
 
         System.out.println("------------");
 
-        var funcionario = new Funcionario();
+        var funcionario = new Funcionario("Julia");
 
-        funcionario.setNome("Julia");
         funcionario.setCpf("333.398.222/60");
         funcionario.setEndereco(endereco);
 

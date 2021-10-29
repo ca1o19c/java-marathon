@@ -6,6 +6,10 @@ import java.util.Objects;
 public class Funcionario extends Pessoa {
     private BigDecimal salario;
 
+    public Funcionario(String nome) {
+        super(nome);
+    }
+
     @Override
     public void imprime() {
         super.imprime();

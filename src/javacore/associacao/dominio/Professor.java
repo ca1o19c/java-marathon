@@ -29,9 +29,9 @@ public class Professor {
 
         if (this.seminarios == null) return;
 
-        System.out.println("\n## Seminários cadastrados ##");
+        System.out.print("\n## Seminários cadastrados ##");
         for (Seminario seminario : this.seminarios) {
-            System.out.println(seminario.getTitulo());
+            System.out.println("\n"+seminario.getTitulo());
 
             if (seminario.getLocal() != null) {
                 System.out.println("\n## Local do seminário ##");

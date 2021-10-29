@@ -31,7 +31,7 @@ public class Professor {
 
         System.out.print("\n## Seminários cadastrados ##");
         for (Seminario seminario : this.seminarios) {
-            System.out.println("\n"+seminario.getTitulo());
+            System.out.println("\n" + seminario.getTitulo());
 
             if (seminario.getLocal() != null) {
                 System.out.println("\n## Local do seminário ##");
@@ -39,6 +39,10 @@ public class Professor {
             }
 
             if (seminario.getAlunos() != null) {
+
+                var length = seminario.getAlunos().length;
+                if (length == 0) break;
+
                 System.out.print("\n## Alunos cadastrados ##");
                 for (Aluno aluno : seminario.getAlunos()) {
                     System.out.println("\nNome: " + aluno.getNome() + "\nIdade: " + aluno.getIdade());

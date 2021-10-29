@@ -11,7 +11,7 @@ public class Cerveja {
 
     // o - Bloco de inicialização Static é executado quando a JVM carregar classe
     // 1 - Alocado espaco em memoria para o objeto
-    // 2 - Cada atributo de classe é criado e inicializado com valores defual ou o que for passado
+    // 2 - Cada atributo de classe é criado e inicializado com valores default ou o que for passado
     // 3 - Bloco de inicialização é inicializado
     // 4 - Construtor é executado
 

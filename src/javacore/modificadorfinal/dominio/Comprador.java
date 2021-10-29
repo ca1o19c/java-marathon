@@ -2,14 +2,7 @@ package javacore.modificadorfinal.dominio;
 
 import java.util.Objects;
 
-public class Carro {
-    public static final double VELOCIDADE_LIMITE;
-
-    static {
-        VELOCIDADE_LIMITE = 220;
-    }
-
-    public final Comprador COMPRADOR = new Comprador();
+public class Comprador {
     private String nome;
 
     public String getNome() {
@@ -24,20 +17,19 @@ public class Carro {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Carro carro = (Carro) o;
-        return Objects.equals(COMPRADOR, carro.COMPRADOR) && Objects.equals(nome, carro.nome);
+        Comprador comprador = (Comprador) o;
+        return Objects.equals(nome, comprador.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(COMPRADOR, nome);
+        return Objects.hash(nome);
     }
 
     @Override
     public String toString() {
-        return "Carro{" +
-                "COMPRADOR=" + COMPRADOR +
-                ", nome='" + nome + '\'' +
+        return "Comprador{" +
+                "nome='" + nome + '\'' +
                 '}';
     }
 }

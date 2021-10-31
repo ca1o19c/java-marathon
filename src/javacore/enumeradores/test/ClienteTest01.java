@@ -1,6 +1,7 @@
 package javacore.enumeradores.test;
 
 import javacore.enumeradores.dominio.Cliente;
+import javacore.enumeradores.dominio.TipoCliente;
 
 import static javacore.enumeradores.dominio.TipoCliente.PESSOA_FISICA;
 import static javacore.enumeradores.dominio.TipoCliente.PESSOA_JURIDICA;
@@ -17,5 +18,11 @@ public class ClienteTest01 {
 
         System.out.println(DEBITO.calcularDesconto(100));
         System.out.println(CREDITO.calcularDesconto(100));
+
+        var tipoCliente = TipoCliente.valueOf("PESSOA_FISICA");
+        System.out.println(tipoCliente.getTipoString());
+
+        var tipoCliente2 = TipoCliente.tipoClientePorNomeDoRelatorio("Pessoa Física");
+        System.out.println(tipoCliente2);
     }
 }

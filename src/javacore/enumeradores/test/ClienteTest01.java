@@ -2,10 +2,10 @@ package javacore.enumeradores.test;
 
 import javacore.enumeradores.dominio.Cliente;
 
-import static javacore.enumeradores.dominio.Cliente.TipoPagamento.CREDITO;
-import static javacore.enumeradores.dominio.Cliente.TipoPagamento.DEBITO;
 import static javacore.enumeradores.dominio.TipoCliente.PESSOA_FISICA;
 import static javacore.enumeradores.dominio.TipoCliente.PESSOA_JURIDICA;
+import static javacore.enumeradores.dominio.TipoPagamento.CREDITO;
+import static javacore.enumeradores.dominio.TipoPagamento.DEBITO;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
@@ -14,5 +14,8 @@ public class ClienteTest01 {
 
         System.out.println(cliente1);
         System.out.println(cliente2);
+
+        System.out.println(DEBITO.calcularDesconto(100));
+        System.out.println(CREDITO.calcularDesconto(100));
     }
 }

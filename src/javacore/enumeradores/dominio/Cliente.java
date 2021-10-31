@@ -1,43 +1,18 @@
 package javacore.enumeradores.dominio;
 
-import java.util.Objects;
-
 public class Cliente {
+    public enum TipoPagamento {
+        DEBITO, CREDITO
+    }
+
     private String nome;
     private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
 
-    public Cliente(String nome, TipoCliente tipoCliente) {
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
-    }
-
-    public void setTipoCliente(TipoCliente tipoCliente) {
-        this.tipoCliente = tipoCliente;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Cliente cliente = (Cliente) o;
-        return Objects.equals(nome, cliente.nome) && tipoCliente == cliente.tipoCliente;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nome, tipoCliente);
+        this.tipoPagamento = tipoPagamento;
     }
 
     @Override
@@ -45,6 +20,7 @@ public class Cliente {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", tipoCliente=" + tipoCliente +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
     }
 }

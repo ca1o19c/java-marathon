@@ -12,6 +12,14 @@ public enum TipoCliente {
         this.tipoString = tipoString;
     }
 
+    public int getTipoInt() {
+        return tipoInt;
+    }
+
+    public String getTipoString() {
+        return tipoString;
+    }
+
     @Override
     public String toString() {
         return "TipoCliente{" +

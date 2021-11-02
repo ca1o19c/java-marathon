@@ -1,6 +1,6 @@
 package javacore.classesabstratas.dominio;
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa {
     protected String nome;
     protected Double salario;
 

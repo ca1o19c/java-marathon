@@ -8,7 +8,10 @@ public class FuncionarioTest01 {
         var gerente = new Gerente("Goku", 3000d);
         var desenvolvedor = new Desenvolvedor("Jiraya", 8000d);
 
+        gerente.imprime();
         System.out.println(gerente);
+
+        desenvolvedor.imprime();
         System.out.println(desenvolvedor);
     }
 }

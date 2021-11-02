@@ -1,14 +1,13 @@
 package javacore.classesabstratas.dominio;
 
-import java.util.Objects;
-
 public abstract class Funcionario {
     protected String nome;
     protected Double salario;
 
-    public Funcionario(String nome, Double salario) {
+    protected Funcionario(String nome, Double salario) {
         this.nome = nome;
         this.salario = salario;
+        calculaBonus();
     }
 
     public String getNome() {
@@ -26,4 +25,6 @@ public abstract class Funcionario {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
+
+    public abstract void calculaBonus();
 }

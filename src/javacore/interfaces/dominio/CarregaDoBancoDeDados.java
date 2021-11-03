@@ -1,6 +1,7 @@
 package javacore.interfaces.dominio;
 
 public class CarregaDoBancoDeDados implements CarregaDados, RemoveDados {
+    // private -> default -> protected -> public
 
     @Override
     public void carregar() {
@@ -15,5 +16,9 @@ public class CarregaDoBancoDeDados implements CarregaDados, RemoveDados {
     @Override
     public void verificarPermissao() {
         System.out.println("Checando permissões no banco de dados");
+    }
+
+    public static void retentaTamanhoMaximoDosDados() {
+        System.out.println("Dentro do 'retentaTamanhoMaximoDosDados()' na classe 'CarregaDoBancoDeDados'");
     }
 }

@@ -1,5 +1,6 @@
 package javacore.interfaces.test;
 
+import javacore.interfaces.dominio.CarregaDados;
 import javacore.interfaces.dominio.CarregaDeArquivos;
 import javacore.interfaces.dominio.CarregaDoBancoDeDados;
 
@@ -16,5 +17,8 @@ public class CarregaDadosTest01 {
 
         carregaDoBancoDeDados.verificarPermissao();
         carregaDeArquivos.verificarPermissao();
+
+        CarregaDados.retentaTamanhoMaximoDosDados();
+        CarregaDoBancoDeDados.retentaTamanhoMaximoDosDados();
     }
 }

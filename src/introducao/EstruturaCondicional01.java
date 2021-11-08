@@ -1,11 +1,11 @@
 package introducao;
 
-public class ConditionalStructure01 {
+public class EstruturaCondicional01 {
     public static void main(String[] args) {
-        int age = 19;
-        boolean authorizedToBuyAlcoholicBeverage =  age >= 18;
+        int idade = 19;
+        boolean autorizadoParaCommprarBebidaAlcoolica =  idade >= 18;
 
-        if (authorizedToBuyAlcoholicBeverage) {
+        if (autorizadoParaCommprarBebidaAlcoolica) {
             System.out.println("Authorized to buy alcoholic beverage");
         } else {
             System.out.println("Not authorized to buy alcoholic beverage");

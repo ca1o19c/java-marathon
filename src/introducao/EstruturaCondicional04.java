@@ -1,10 +1,10 @@
 package introducao;
 
-public class ConditionalStructure04 {
+public class EstruturaCondicional04 {
     public static void main(String[] args) {
-        byte day = 6;
+        byte dia = 6;
 
-        switch (day) {
+        switch (dia) {
             case 1:
                 System.out.println("Sunday");
                 break;
@@ -30,9 +30,9 @@ public class ConditionalStructure04 {
                 System.out.println("Day not found : (");
         }
 
-        char gender = 'M';
+        char sexo = 'M';
 
-        switch (gender) {
+        switch (sexo) {
             case 'M':
                 System.out.println("Men");
                 break;

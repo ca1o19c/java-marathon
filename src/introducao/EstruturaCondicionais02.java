@@ -1,6 +1,6 @@
 package introducao;
 
-public class EstruturaCondicional02 {
+public class EstruturaCondicionais02 {
     public static void main(String[] args) {
         int idade = 19;
         String categoria;

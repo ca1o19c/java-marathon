@@ -1,6 +1,6 @@
 package introducao;
 
-public class EstruturaCondicional04 {
+public class EstruturaCondicionais04 {
     public static void main(String[] args) {
         byte dia = 6;
 

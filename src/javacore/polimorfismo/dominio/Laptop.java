@@ -12,4 +12,12 @@ public class Laptop extends Produto{
         System.out.println("Calculando imposto do laptop ...");
         return this.valor * IMPOSTO;
     }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "nome='" + nome + '\'' +
+                ", valor=" + valor +
+                '}';
+    }
 }

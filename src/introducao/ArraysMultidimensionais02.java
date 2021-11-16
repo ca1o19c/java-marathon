@@ -1,7 +1,5 @@
 package introducao;
 
-import java.util.Arrays;
-
 public class ArraysMultidimensionais02 {
     public static void main(String[] args) {
         int[][] dias = new int[3][3];
@@ -18,8 +16,8 @@ public class ArraysMultidimensionais02 {
         dias[2][1] = 8;
         dias[2][2] = 9;
 
-        for (int[] arrBase: dias) {
-            for (int num: arrBase) {
+        for (int[] arrBase : dias) {
+            for (int num : arrBase) {
                 System.out.print(num + " ");
             }
             System.out.println("");

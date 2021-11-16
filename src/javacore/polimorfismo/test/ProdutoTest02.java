@@ -22,6 +22,8 @@ public class ProdutoTest02 {
         System.out.println(produto2.getValor());
         System.out.println(produto2.calcularImposto());
 
+        System.out.println("--------------------");
+
         Produto produto3 = new Tomate("Tomate Cereja", 6d);
 
         System.out.println(produto3.getNome());

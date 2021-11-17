@@ -36,10 +36,15 @@ public class CalculadoraImposto {
     public static void calcularImposto(Produto produto) {
         System.out.println("Relatório de imposto ...");
 
-       var imposto = produto.calcularImposto();
+        var imposto = produto.calcularImposto();
 
         System.out.println("Produto: " + produto.getNome() +
                 "\nValor: " + produto.getValor() +
                 "\nImposto a ser pago: " + imposto);
+
+        if (produto instanceof Tomate) {
+            var dataValidade = ((Tomate) produto).getDataValidade();
+            System.out.println(dataValidade);
+        }
     }
 }

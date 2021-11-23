@@ -19,14 +19,12 @@ public class RuntimeExceptionTest05 {
 
         try {
             talvezLanceException();
-        } catch (SQLException | FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (SQLException | IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static void talvezLanceException() throws SQLException, FileNotFoundException, IOException {
+    private static void talvezLanceException() throws SQLException, IOException {
         // TODO document why this method is empty
     }
 }

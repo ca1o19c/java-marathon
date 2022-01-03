@@ -11,5 +11,9 @@ public class DateTest01 {
         data.setTime(1_640_801_516_408L);
 
         System.out.println(data);
+
+        data.setTime(data.getTime() + 3_600_000_000L);
+
+        System.out.println(data);
     }
 }

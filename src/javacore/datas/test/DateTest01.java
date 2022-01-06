@@ -1,4 +1,4 @@
-package javacore.datas;
+package javacore.datas.test;
 
 import java.util.Date;
 

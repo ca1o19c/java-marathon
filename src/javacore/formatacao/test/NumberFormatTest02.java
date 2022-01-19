@@ -23,5 +23,11 @@ public class NumberFormatTest02 {
              ) {
             System.out.println(numberFormat.format(valor));
         }
+
+        try {
+            System.out.println(nfa[3].parse("$1,000.21"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }

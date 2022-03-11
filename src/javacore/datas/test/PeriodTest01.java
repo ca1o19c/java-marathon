@@ -2,6 +2,7 @@ package javacore.datas.test;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class PeriodTest01 {
     public static void main(String[] args) {
@@ -25,5 +26,7 @@ public class PeriodTest01 {
 
         System.out.println(Period.between(LocalDate.now(),
                 LocalDate.now().plusDays(p3.getDays())).getMonths());
+
+        System.out.println(agora.until(agora.plusDays(p3.getDays()), ChronoUnit.DAYS));
     }
 }

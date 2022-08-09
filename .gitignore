@@ -23,6 +23,7 @@
 hs_err_pid*
 
 arquivo-test/
+out
 target/
 .classpath
 .project

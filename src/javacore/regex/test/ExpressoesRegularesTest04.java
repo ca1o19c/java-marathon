@@ -1,10 +1,9 @@
 package javacore.regex.test;
 
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ExpressoesRegularesExercicio {
+public class ExpressoesRegularesTest04 {
     public static void main(String[] args) {
         // ? Zero ou uma
         // * Zero ou mais
@@ -13,6 +12,7 @@ public class ExpressoesRegularesExercicio {
         // ()
         // | o(v|c)o ovo | oco
         // $
+
         String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
 
         Pattern pattern = Pattern.compile(regex);
